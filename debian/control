@@ -1,0 +1,24 @@
+Source: libfilehandle-fmode-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Xavier Guimard <x.guimard@free.fr>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               libtest-pod-perl,
+               perl
+Standards-Version: 4.2.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libfilehandle-fmode-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libfilehandle-fmode-perl.git
+Homepage: https://metacpan.org/release/FileHandle-Fmode
+
+Package: libfilehandle-fmode-perl
+Architecture: any
+Depends: ${perl:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: Perl module for checking filehandle status
+ FileHandle::Fmode provides methods to test if a filehandle is readable,
+ writable, both, or open for appending.
+ .
+ FileHandle::Fmode is used by other packages like DBM::Deep.
